@@ -1,0 +1,966 @@
+[
+  {
+    "model": "scenes.scene",
+    "pk": 1,
+    "fields": {
+      "title": "在便利店买东西",
+      "description": "在日本便利店购买日常用品的基本对话",
+      "category": "shopping",
+      "level": "N5",
+      "cover_image": "https://images.unsplash.com/photo-1509281373149-e957c6dae452?w=500",
+      "is_active": true,
+      "created_at": "2026-06-06T10:00:00"
+    }
+  },
+  {
+    "model": "scenes.scene",
+    "pk": 2,
+    "fields": {
+      "title": "居酒屋点餐",
+      "description": "在日本居酒屋点菜的实用对话",
+      "category": "food",
+      "level": "N4",
+      "cover_image": "https://images.unsplash.com/photo-1554797589-7241b64b0ce9?w=500",
+      "is_active": true,
+      "created_at": "2026-06-06T10:00:00"
+    }
+  },
+  {
+    "model": "scenes.scene",
+    "pk": 3,
+    "fields": {
+      "title": "向当地人问路",
+      "description": "在陌生城市向路人询问方向的对话",
+      "category": "travel",
+      "level": "N5",
+      "cover_image": "https://images.unsplash.com/photo-1492571331479-5u8faf2c93bb?w=500",
+      "is_active": true,
+      "created_at": "2026-06-06T10:00:00"
+    }
+  },
+  {
+    "model": "scenes.scene",
+    "pk": 4,
+    "fields": {
+      "title": "餐厅点餐",
+      "description": "在正式餐厅用餐的对话",
+      "category": "food",
+      "level": "N3",
+      "cover_image": "https://images.unsplash.com/photo-1516054585259-f8f6c6ceed72?w=500",
+      "is_active": true,
+      "created_at": "2026-06-06T10:00:00"
+    }
+  },
+  {
+    "model": "scenes.scene",
+    "pk": 5,
+    "fields": {
+      "title": "乘坐地铁",
+      "description": "在日本乘坐地铁的各种对话场景",
+      "category": "travel",
+      "level": "N4",
+      "cover_image": "https://images.unsplash.com/photo-1540959733332-eab4deabeef6?w=500",
+      "is_active": true,
+      "created_at": "2026-06-06T10:00:00"
+    }
+  },
+  {
+    "model": "scenes.scene",
+    "pk": 6,
+    "fields": {
+      "title": "办公室自我介绍",
+      "description": "在日本公司入职时的自我介绍对话",
+      "category": "business",
+      "level": "N3",
+      "cover_image": "https://images.unsplash.com/photo-1497366216548-415c23a7e762?w=500",
+      "is_active": true,
+      "created_at": "2026-06-06T10:00:00"
+    }
+  },
+  {
+    "model": "scenes.scene",
+    "pk": 7,
+    "fields": {
+      "title": "医院的对话",
+      "description": "在日本看病时的必要对话",
+      "category": "daily",
+      "level": "N4",
+      "cover_image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500",
+      "is_active": true,
+      "created_at": "2026-06-06T10:00:00"
+    }
+  },
+  {
+    "model": "scenes.scene",
+    "pk": 8,
+    "fields": {
+      "title": "超市购物",
+      "description": "在日本超市采购食材的日常对话",
+      "category": "shopping",
+      "level": "N5",
+      "cover_image": "https://images.unsplash.com/photo-1578916171728-4468eba7d30c?w=500",
+      "is_active": true,
+      "created_at": "2026-06-06T10:00:00"
+    }
+  },
+  {
+    "model": "scenes.scene",
+    "pk": 9,
+    "fields": {
+      "title": "和家人通电话",
+      "description": "用日语和家人打电话的常见场景",
+      "category": "daily",
+      "level": "N4",
+      "cover_image": "https://images.unsplash.com/photo-1557979619-4452ea68f0e9?w=500",
+      "is_active": true,
+      "created_at": "2026-06-06T10:00:00"
+    }
+  },
+  {
+    "model": "scenes.scene",
+    "pk": 10,
+    "fields": {
+      "title": "商务会议寒暄",
+      "description": "商务场合中的日常寒暄与介绍",
+      "category": "business",
+      "level": "N2",
+      "cover_image": "https://images.unsplash.com/photo-1515187029135-18ee29cf3fc9?w=500",
+      "is_active": true,
+      "created_at": "2026-06-06T10:00:00"
+    }
+  },
+  {
+    "model": "scenes.scene",
+    "pk": 11,
+    "fields": {
+      "title": "电影院的对话",
+      "description": "在日本电影院买票选座的对话",
+      "category": "daily",
+      "level": "N5",
+      "cover_image": "https://images.unsplash.com/photo-1489599849927-2ee92cede3f1?w=500",
+      "is_active": true,
+      "created_at": "2026-06-06T10:00:00"
+    }
+  },
+  {
+    "model": "scenes.scene",
+    "pk": 12,
+    "fields": {
+      "title": "居酒屋的深度对话",
+      "description": "在居酒屋与同事进行较为深入的日常对话",
+      "category": "food",
+      "level": "N2",
+      "cover_image": "https://images.unsplash.com/photo-1580486816769-c9bf47b4ae17?w=500",
+      "is_active": true,
+      "created_at": "2026-06-06T10:00:00"
+    }
+  },
+  {
+    "model": "scenes.dialogue",
+    "pk": 1,
+    "fields": {
+      "scene": 1,
+      "role": "A",
+      "japanese_text": "すみません、この傘はいくらですか",
+      "kana_text": "すみません、このかさはいくらですか",
+      "romaji_text": "Sumimasen, kono kasa wa ikura desu ka",
+      "chinese_text": "请问，这把伞多少钱？",
+      "audio_url": "",
+      "vocabulary": [
+        {
+          "word": "すみません",
+          "meaning": "不好意思/请问"
+        },
+        {
+          "word": "傘",
+          "meaning": "伞",
+          "kana": "かさ"
+        }
+      ],
+      "order": 1
+    }
+  },
+  {
+    "model": "scenes.dialogue",
+    "pk": 2,
+    "fields": {
+      "scene": 1,
+      "role": "B",
+      "japanese_text": "二千円です",
+      "kana_text": "にせんえんですね",
+      "romaji_text": "Nisen-en desu",
+      "chinese_text": "两千日元。",
+      "audio_url": "",
+      "vocabulary": [
+        {
+          "word": "二千円",
+          "meaning": "2000日元"
+        }
+      ],
+      "order": 2
+    }
+  },
+  {
+    "model": "scenes.dialogue",
+    "pk": 3,
+    "fields": {
+      "scene": 1,
+      "role": "A",
+      "japanese_text": "はい、これと一緒に袋もお願いします",
+      "kana_text": "はい、これいっぽうふくろもおねがいします",
+      "romaji_text": "Hai, kore to Issho ni fukuro mo onegaishimasu",
+      "chinese_text": "好的，请再给我一個袋子。",
+      "audio_url": "",
+      "vocabulary": [
+        {
+          "word": "袋",
+          "meaning": "袋子",
+          "kana": "ふくろ"
+        },
+        {
+          "word": "一緒に",
+          "meaning": "一起"
+        }
+      ],
+      "order": 3
+    }
+  },
+  {
+    "model": "scenes.dialogue",
+    "pk": 4,
+    "fields": {
+      "scene": 1,
+      "role": "B",
+      "japanese_text": "こちらが二千円です。ありがとうございました",
+      "kana_text": "こちらがにせんえんです。ありがとうございます",
+      "romaji_text": "Kochira ga nisen-en desu. Arigatou gozaimashita",
+      "chinese_text": "这是找零。非常感谢。",
+      "audio_url": "",
+      "vocabulary": [
+        {
+          "word": "こちら",
+          "meaning": "这边/这个是"
+        },
+        {
+          "word": "ありがとうございました",
+          "meaning": "非常感谢（过去式）"
+        }
+      ],
+      "order": 4
+    }
+  },
+  {
+    "model": "scenes.dialogue",
+    "pk": 5,
+    "fields": {
+      "scene": 2,
+      "role": "A",
+      "japanese_text": "タバコはないですか",
+      "kana_text": "タバコはないですか",
+      "romaji_text": "Tabako wa nai desu ka",
+      "chinese_text": "有烟吗？",
+      "audio_url": "",
+      "vocabulary": [
+        {
+          "word": "たばこ",
+          "meaning": "烟"
+        }
+      ],
+      "order": 1
+    }
+  },
+  {
+    "model": "scenes.dialogue",
+    "pk": 6,
+    "fields": {
+      "scene": 2,
+      "role": "B",
+      "japanese_text": "はい、こちらでございます",
+      "kana_text": "はい、こちらでございます",
+      "romaji_text": "Hai, kochira de gozaimasu",
+      "chinese_text": "有的，这是我们的（产品）。",
+      "audio_url": "",
+      "vocabulary": [
+        {
+          "word": "こちら",
+          "meaning": "这个"
+        },
+        {
+          "word": "でございます",
+          "meaning": "是（郑重语）"
+        }
+      ],
+      "order": 2
+    }
+  },
+  {
+    "model": "scenes.dialogue",
+    "pk": 7,
+    "fields": {
+      "scene": 2,
+      "role": "A",
+      "japanese_text": "おすすめのお酒はありますか",
+      "kana_text": "おすすめのおさけはありますか",
+      "romaji_text": "Osusume no osake wa arimasu ka",
+      "chinese_text": "有什么推荐的酒吗？",
+      "audio_url": "",
+      "vocabulary": [
+        {
+          "word": "おすすめ",
+          "meaning": "推荐"
+        },
+        {
+          "word": "お酒",
+          "meaning": "酒",
+          "kana": "おさけ"
+        }
+      ],
+      "order": 3
+    }
+  },
+  {
+    "model": "scenes.dialogue",
+    "pk": 8,
+    "fields": {
+      "scene": 2,
+      "role": "B",
+      "japanese_text": "こちらの特製おでんです。すごく人気があります",
+      "kana_text": "とくせいおでんです。すごくにんきがあります",
+      "romaji_text": "Tokusei odeku desu. Suguoku ninki ga arimasu",
+      "chinese_text": "这是我们特制的关东煮，非常受欢迎。",
+      "audio_url": "",
+      "vocabulary": [
+        {
+          "word": "特製",
+          "meaning": "特制的"
+        },
+        {
+          "word": "おでん",
+          "meaning": "关东煮",
+          "kana": "おでん"
+        },
+        {
+          "word": "人気",
+          "meaning": "人气"
+        }
+      ],
+      "order": 4
+    }
+  },
+  {
+    "model": "scenes.dialogue",
+    "pk": 9,
+    "fields": {
+      "scene": 3,
+      "role": "A",
+      "japanese_text": "失礼です、清水寺はどちらですか",
+      "kana_text": "しつれいですが、きよみでぃはどちらですか",
+      "romaji_text": "Shitsurei desu ga, Kiyomizu-dera wa dochira desu ka",
+      "chinese_text": "不好意思，请问清水寺在哪里？",
+      "audio_url": "",
+      "vocabulary": [
+        {
+          "word": "失礼",
+          "meaning": "失礼/打扰了"
+        },
+        {
+          "word": "どちら",
+          "meaning": "哪个/哪边"
+        }
+      ],
+      "order": 1
+    }
+  },
+  {
+    "model": "scenes.dialogue",
+    "pk": 10,
+    "fields": {
+      "scene": 3,
+      "role": "B",
+      "japanese_text": "まっすぐ行って、左です",
+      "kana_text": "まっすぐいって、ひだりです",
+      "romaji_text": "Massugu itte, hidari desu",
+      "chinese_text": "直走，然后左转。",
+      "audio_url": "",
+      "vocabulary": [
+        {
+          "word": "まっすぐ",
+          "meaning": "笔直地"
+        },
+        {
+          "word": "左",
+          "meaning": "左边",
+          "kana": "ひだり"
+        }
+      ],
+      "order": 2
+    }
+  },
+  {
+    "model": "scenes.dialogue",
+    "pk": 11,
+    "fields": {
+      "scene": 3,
+      "role": "A",
+      "japanese_text": "どれくらいかかりますか",
+      "kana_text": "どれくらいかかりますか",
+      "romaji_text": "Dore kurai kakarimasu ka",
+      "chinese_text": "要多久？",
+      "audio_url": "",
+      "vocabulary": [
+        {
+          "word": "どれくらい",
+          "meaning": "多久/多少"
+        }
+      ],
+      "order": 3
+    }
+  },
+  {
+    "model": "scenes.dialogue",
+    "pk": 12,
+    "fields": {
+      "scene": 3,
+      "role": "B",
+      "japanese_text": "五分くらいです",
+      "kana_text": "ごふんくらいです",
+      "romaji_text": "Gofun kurai desu",
+      "chinese_text": "大约五分钟。",
+      "audio_url": "",
+      "vocabulary": [
+        {
+          "word": "五分",
+          "meaning": "五分钟",
+          "kana": "ごふん"
+        }
+      ],
+      "order": 4
+    }
+  },
+  {
+    "model": "scenes.dialogue",
+    "pk": 13,
+    "fields": {
+      "scene": 5,
+      "role": "A",
+      "japanese_text": "銀座線の上野行きの切符を一枚ください",
+      "kana_text": "ぎんざせんのうえのゆきのきっぷをいっまいください",
+      "romaji_text": "Ginza-sen no Ueno-yuki no kippu o ikkai kudasai",
+      "chinese_text": "请给我一张银往线上野方向的票。",
+      "audio_url": "",
+      "vocabulary": [
+        {
+          "word": "切符",
+          "meaning": "票",
+          "kana": "きっぷ"
+        },
+        {
+          "word": "一枚",
+          "meaning": "一张",
+          "kana": "いっまい"
+        }
+      ],
+      "order": 1
+    }
+  },
+  {
+    "model": "scenes.dialogue",
+    "pk": 14,
+    "fields": {
+      "scene": 5,
+      "role": "B",
+      "japanese_text": "二百四十円です。ICOCAはございますか",
+      "kana_text": "にひゃくよんじゅうえんです。いこかがございますか",
+      "romaji_text": "Nihyaku yonjuu-en desu. ICOCA wa gozaimasu ka",
+      "chinese_text": "240日元。您有ICOCA卡吗？",
+      "audio_url": "",
+      "vocabulary": [
+        {
+          "word": "二百四十円",
+          "meaning": "240日元"
+        },
+        {
+          "word": "ICOCA",
+          "meaning": "日本交通IC卡"
+        }
+      ],
+      "order": 2
+    }
+  },
+  {
+    "model": "scenes.dialogue",
+    "pk": 15,
+    "fields": {
+      "scene": 5,
+      "role": "A",
+      "japanese_text": "ICOCAはありません。切符でお願いします",
+      "kana_text": "いこかはありません。きっぷでおねがいします",
+      "romaji_text": "ICOCA wa arimasen. Kippu de onegaishimasu",
+      "chinese_text": "没有ICOCA，请用票。",
+      "audio_url": "",
+      "vocabulary": [
+        {
+          "word": "ありません",
+          "meaning": "没有"
+        }
+      ],
+      "order": 3
+    }
+  },
+  {
+    "model": "scenes.dialogue",
+    "pk": 16,
+    "fields": {
+      "scene": 6,
+      "role": "A",
+      "japanese_text": "初めまして。営業部の田中です",
+      "kana_text": "はじめまして。えいぎょうぶのたなかです",
+      "romaji_text": "Hajimemashite. Eigyou-bu no Tanaka desu",
+      "chinese_text": "初次见面。我是营业部的田中。",
+      "audio_url": "",
+      "vocabulary": [
+        {
+          "word": "初めまして",
+          "meaning": "初次见面"
+        },
+        {
+          "word": "営業部",
+          "meaning": "营业部",
+          "kana": "えいぎょうぶ"
+        }
+      ],
+      "order": 1
+    }
+  },
+  {
+    "model": "scenes.dialogue",
+    "pk": 17,
+    "fields": {
+      "scene": 6,
+      "role": "B",
+      "japanese_text": "どうぞよろしくお願いします。企画部の佐藤です",
+      "kana_text": "どうぞよろしくおねがいします。きかくぶのさとうです",
+      "romaji_text": "Douzo yoroshiku onegaishimasu. Kikaku-bu no Sato desu",
+      "chinese_text": "请多关照。我是企划部的佐藤。",
+      "audio_url": "",
+      "vocabulary": [
+        {
+          "word": "よろしくお願いします",
+          "meaning": "请多关照"
+        },
+        {
+          "word": "企画部",
+          "meaning": "企划部",
+          "kana": "きかくぶ"
+        }
+      ],
+      "order": 2
+    }
+  },
+  {
+    "model": "scenes.dialogue",
+    "pk": 18,
+    "fields": {
+      "scene": 7,
+      "role": "A",
+      "japanese_text": "先生、頭が痛いです",
+      "kana_text": "せんせい、あたまがいたいです",
+      "romaji_text": "Sensei, atama ga itai desu",
+      "chinese_text": "医生，我头疼。",
+      "audio_url": "",
+      "vocabulary": [
+        {
+          "word": "先生",
+          "meaning": "医生/老师",
+          "kana": "せんせい"
+        },
+        {
+          "word": "頭",
+          "meaning": "头",
+          "kana": "あたま"
+        },
+        {
+          "word": "痛い",
+          "meaning": "疼",
+          "kana": "いたい"
+        }
+      ],
+      "order": 1
+    }
+  },
+  {
+    "model": "scenes.dialogue",
+    "pk": 19,
+    "fields": {
+      "scene": 7,
+      "role": "B",
+      "japanese_text": "発熱はありますか",
+      "kana_text": "はつねつがありますか",
+      "romaji_text": "Hatsunetsu ga arimasu ka",
+      "chinese_text": "发烧吗？",
+      "audio_url": "",
+      "vocabulary": [
+        {
+          "word": "発熱",
+          "meaning": "发烧",
+          "kana": "はつねつ"
+        }
+      ],
+      "order": 2
+    }
+  },
+  {
+    "model": "scenes.dialogue",
+    "pk": 20,
+    "fields": {
+      "scene": 7,
+      "role": "A",
+      "japanese_text": "はい、三十八度五分あります",
+      "kana_text": "はい、さんじゅうはんどごふんあります",
+      "romaji_text": "Hai, sanjuuhaido go-fu arimasu",
+      "chinese_text": "是的，38度5分。",
+      "audio_url": "",
+      "vocabulary": [
+        {
+          "word": "三十八度五分",
+          "meaning": "38度5分"
+        }
+      ],
+      "order": 3
+    }
+  },
+  {
+    "model": "scenes.dialogue",
+    "pk": 21,
+    "fields": {
+      "scene": 9,
+      "role": "A",
+      "japanese_text": "おはよう、母親。风邪引きました",
+      "kana_text": "おはよう、おかあさん。かぜひきました",
+      "romaji_text": "Ohayou, okaasan. Kaze hikimashita",
+      "chinese_text": "早上好，妈妈。我感冒了。",
+      "audio_url": "",
+      "vocabulary": [
+        {
+          "word": "母親",
+          "meaning": "母亲",
+          "kana": "おかあさん"
+        },
+        {
+          "word": "风邪",
+          "meaning": "感冒",
+          "kana": "かぜ"
+        }
+      ],
+      "order": 1
+    }
+  },
+  {
+    "model": "scenes.dialogue",
+    "pk": 22,
+    "fields": {
+      "scene": 9,
+      "role": "B",
+      "japanese_text": "ああ、大変。医者に行きなさい",
+      "kana_text": "ああ、たいへん。いしゃにいきなさい",
+      "romaji_text": "Aa, taihen.isha ni ikinasai",
+      "chinese_text": "啊，糟糕。去看医生吧。",
+      "audio_url": "",
+      "vocabulary": [
+        {
+          "word": "大変",
+          "meaning": "糟糕/辛苦"
+        },
+        {
+          "word": "医者",
+          "meaning": "医生",
+          "kana": "いしゃ"
+        }
+      ],
+      "order": 2
+    }
+  },
+  {
+    "model": "scenes.dialogue",
+    "pk": 23,
+    "fields": {
+      "scene": 10,
+      "role": "A",
+      "japanese_text": "本日は御社へようこそ。弊社最好的製品をご紹介いたします",
+      "kana_text": "ほんじつおんしゃへようこそ。へいしゃさいこうのせいひんをごしょうかいいたします",
+      "romaji_text": "Honjitsu onsha e youkoso. Heisha saikou no seihin wo shoushai itashimasu",
+      "chinese_text": "欢迎来到我们公司。为您介绍我们最好的产品。",
+      "audio_url": "",
+      "vocabulary": [
+        {
+          "word": "御社",
+          "meaning": "贵公司",
+          "kana": "おんしゃ"
+        },
+        {
+          "word": "弊社",
+          "meaning": "我们公司",
+          "kana": "へいしゃ"
+        },
+        {
+          "word": "製品",
+          "meaning": "产品",
+          "kana": "せいひん"
+        }
+      ],
+      "order": 1
+    }
+  },
+  {
+    "model": "scenes.dialogue",
+    "pk": 24,
+    "fields": {
+      "scene": 10,
+      "role": "B",
+      "japanese_text": "早速ですが、価格について教えていただけますか",
+      "kana_text": "さっそくですが、かかくについておしえていただけたますか",
+      "romaji_text": "Sassoku desu ga, kakuaku ni tsuite oshiete itadakemasu ka",
+      "chinese_text": "快言快语，能告诉我价格吗？",
+      "audio_url": "",
+      "vocabulary": [
+        {
+          "word": "早速",
+          "meaning": "快言快语/立即"
+        },
+        {
+          "word": "価格",
+          "meaning": "价格",
+          "kana": "かかく"
+        }
+      ],
+      "order": 2
+    }
+  },
+  {
+    "model": "scenes.dialogue",
+    "pk": 25,
+    "fields": {
+      "scene": 4,
+      "role": "A",
+      "japanese_text": "テーブル席は空いていますか",
+      "kana_text": "てーぶるせきあいていますか",
+      "romaji_text": "Teekuru seki aite imasu ka",
+      "chinese_text": "桌子有空位吗？",
+      "audio_url": "",
+      "vocabulary": [
+        {
+          "word": "テーブル席",
+          "meaning": "桌子座位"
+        },
+        {
+          "word": "空いて",
+          "meaning": "空着（ている）"
+        }
+      ],
+      "order": 1
+    }
+  },
+  {
+    "model": "scenes.dialogue",
+    "pk": 26,
+    "fields": {
+      "scene": 4,
+      "role": "B",
+      "japanese_text": "はい、こちらへどうぞ",
+      "kana_text": "はい、こちらへどうぞ",
+      "romaji_text": "Hai, kochira e douzo",
+      "chinese_text": "好的，这边请。",
+      "audio_url": "",
+      "vocabulary": [
+        {
+          "word": "どうぞ",
+          "meaning": "请"
+        }
+      ],
+      "order": 2
+    }
+  },
+  {
+    "model": "scenes.dialogue",
+    "pk": 27,
+    "fields": {
+      "scene": 4,
+      "role": "A",
+      "japanese_text": "本日のおすすめは何ですか",
+      "kana_text": "ほんじつのおすすめはなにですか",
+      "romaji_text": "Honjitsu no osusume wa nan desu ka",
+      "chinese_text": "今天的推荐是什么？",
+      "audio_url": "",
+      "vocabulary": [
+        {
+          "word": "本日",
+          "meaning": "今日",
+          "kana": "ほんじつ"
+        }
+      ],
+      "order": 3
+    }
+  },
+  {
+    "model": "scenes.dialogue",
+    "pk": 28,
+    "fields": {
+      "scene": 4,
+      "role": "B",
+      "japanese_text": "本日のおすすめは松茸のスープです",
+      "kana_text": "ほんじつのすすめはまつのきのすーぷです",
+      "romaji_text": "Honjitsu no osusume wa matsutake no suupu desu",
+      "chinese_text": "今天的推荐是松茸汤。",
+      "audio_url": "",
+      "vocabulary": [
+        {
+          "word": "松茸",
+          "meaning": "松茸",
+          "kana": "まつのき"
+        }
+      ],
+      "order": 4
+    }
+  },
+  {
+    "model": "scenes.dialogue",
+    "pk": 29,
+    "fields": {
+      "scene": 8,
+      "role": "A",
+      "japanese_text": "卵はありますか",
+      "kana_text": "たまごはありますか",
+      "romaji_text": "Tamago wa arimasu ka",
+      "chinese_text": "有鸡蛋吗？",
+      "audio_url": "",
+      "vocabulary": [
+        {
+          "word": "卵",
+          "meaning": "鸡蛋",
+          "kana": "たまご"
+        }
+      ],
+      "order": 1
+    }
+  },
+  {
+    "model": "scenes.dialogue",
+    "pk": 30,
+    "fields": {
+      "scene": 8,
+      "role": "B",
+      "japanese_text": "向こうのパックがありますよ",
+      "kana_text": "むこうのパックがありますよ",
+      "romaji_text": "Mukou no pakku ga arimasu yo",
+      "chinese_text": "那边有包装盒。",
+      "audio_url": "",
+      "vocabulary": [
+        {
+          "word": "向こう",
+          "meaning": "那边"
+        },
+        {
+          "word": "パック",
+          "meaning": "包装盒"
+        }
+      ],
+      "order": 2
+    }
+  },
+  {
+    "model": "scenes.dialogue",
+    "pk": 31,
+    "fields": {
+      "scene": 11,
+      "role": "A",
+      "japanese_text": "映画の切符、二人分お願いします",
+      "kana_text": "えいがのきっぷ、ふたりぶんおねがいします",
+      "romaji_text": "Eiga no kippu, futari-bun onegaishimasu",
+      "chinese_text": "两张电影票。",
+      "audio_url": "",
+      "vocabulary": [
+        {
+          "word": "映画",
+          "meaning": "电影",
+          "kana": "えいが"
+        },
+        {
+          "word": "二人分",
+          "meaning": "两人的"
+        }
+      ],
+      "order": 1
+    }
+  },
+  {
+    "model": "scenes.dialogue",
+    "pk": 32,
+    "fields": {
+      "scene": 11,
+      "role": "B",
+      "japanese_text": "どの回にご覧になりますか",
+      "kana_text": "どのかいにごらんになりますか",
+      "romaji_text": "Dony kai ni goran ni narimasu ka",
+      "chinese_text": "您想看哪一场？",
+      "audio_url": "",
+      "vocabulary": [
+        {
+          "word": "回",
+          "meaning": "场次",
+          "kana": "かい"
+        }
+      ],
+      "order": 2
+    }
+  },
+  {
+    "model": "scenes.dialogue",
+    "pk": 33,
+    "fields": {
+      "scene": 12,
+      "role": "A",
+      "japanese_text": "今日の部署の成果はいかがでしたか",
+      "kana_text": "きょうのとくのせいかはいかがでしたか",
+      "romaji_text": "Kyou no bushou no seika wa ikaga deshita ka",
+      "chinese_text": "今天的部门成果如何？",
+      "audio_url": "",
+      "vocabulary": [
+        {
+          "word": "部署",
+          "meaning": "部门",
+          "kana": "ぶしょ"
+        },
+        {
+          "word": "成果",
+          "meaning": "成果"
+        }
+      ],
+      "order": 1
+    }
+  },
+  {
+    "model": "scenes.dialogue",
+    "pk": 34,
+    "fields": {
+      "scene": 12,
+      "role": "B",
+      "japanese_text": "プロジェクトは順調に進んでいます。来月までに完了予定です",
+      "kana_text": "ぷろじぇくとじゅんちょうにすすんでいます。らいげつきまでにかんりよていす",
+      "romaji_text": "Purojekuto wa junchou ni susundeimasu.raigetsu made ni kanryou yotei desu",
+      "chinese_text": "项目进展顺利。预计下个月完成。",
+      "audio_url": "",
+      "vocabulary": [
+        {
+          "word": "プロジェクト",
+          "meaning": "项目"
+        },
+        {
+          "word": "順調",
+          "meaning": "顺利",
+          "kana": "じゅんちょう"
+        }
+      ],
+      "order": 2
+    }
+  }
+]

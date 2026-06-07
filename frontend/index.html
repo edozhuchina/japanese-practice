@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页 - 日语口语练习</title>
+    <style>
+        body { font-family: sans-serif; background: #f4f7f6; margin: 0; padding: 20px; }
+        .header { display: flex; justify-content: space-between; align-items: center; background: white; padding: 15px 20px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); margin-bottom: 30px;}
+        .user-info { font-weight: bold; color: #333; }
+        .logout-btn { background: none; border: 1px solid #ddd; padding: 8px 15px; border-radius: 20px; cursor: pointer; color: #666;}
+        .logout-btn:hover { background: #eee; }
+        .dashboard { background: white; padding: 40px; border-radius: 10px; text-align: center; }
+        .badge { display: inline-block; background: #ffeaa7; color: #d35400; padding: 5px 15px; border-radius: 20px; font-size: 14px; margin-top: 10px;}
+        h1 { color: #2c3e50; }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h2 style="margin:0; color: #ff6b6b;">🌸 日语口语练习</h2>
+        <div>
+            <span class="user-info" id="welcomeMsg">加载中...</span>
+            <button class="logout-btn" onclick="logout()">退出登录</button>
+        </div>
+    </div>
+
+    <div class="dashboard">
+        <h1 id="mainTitle">欢迎开始今天的学习！</h1>
+        <p style="color: #7f8c8d;">在这里，我们将开始你的专属日语训练计划。</p>
+        <div class="badge" id="userLevel">等级加载中...</div>
+        <br>
+        <!-- 🌟 新增：跳转到场景大厅的按钮 -->
+        <button onclick="window.location.href='scenes.html'" style="padding: 15px 40px; font-size: 18px; background: #ff6b6b; color: white; border: none; border-radius: 30px; cursor: pointer; box-shadow: 0 4px 15px rgba(255,107,107,0.4); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+            🚀 进入场景大厅
+        </button>
+    </div>
+
+    <script src="js/auth.js"></script>
+    <script>
+        // 页面加载时立即检查登录状态
+        window.onload = function() {
+            const user = checkAuth();
+            
+            if (!user) {
+                // 如果没有 Token，说明未登录，强制跳转回登录页
+                alert('请先登录！');
+                window.location.href = 'login.html';
+                return;
+            }
+
+            // 登录成功，渲染用户信息
+            document.getElementById('welcomeMsg').textContent = `你好, ${user.nickname}`;
+            document.getElementById('mainTitle').textContent = `${user.nickname}，今天想练习什么？`;
+            document.getElementById('userLevel').textContent = `当前等级: ${user.japanese_level.toUpperCase()}`;
+        };
+    </script>
+</body>
+</html>

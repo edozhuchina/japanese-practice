@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册 - 日语口语练习</title>
+    <style>
+        /* 复用登录页的样式，保持风格统一 */
+        body { font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; background: #f4f7f6; }
+        .box { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); width: 350px; }
+        input, select { width: 100%; padding: 12px; margin: 8px 0; box-sizing: border-box; border: 1px solid #ddd; border-radius: 6px; }
+        button { width: 100%; padding: 12px; background: #4ecdc4; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: bold; font-size: 16px; margin-top: 10px;}
+        .msg { text-align: center; font-size: 14px; margin-top: 10px; min-height: 20px; }
+        .error { color: #e74c3c; }
+        .success { color: #2ecc71; }
+        .link { text-align: center; margin-top: 15px; font-size: 14px; }
+        .link a { color: #4ecdc4; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2 style="text-align: center; margin-bottom: 10px;">🚀 开启日语学习之旅</h2>
+        <input type="text" id="username" placeholder="设置用户名 (登录使用)">
+        <input type="text" id="nickname" placeholder="你的昵称 (选填)">
+        <input type="password" id="password" placeholder="设置密码">
+        <input type="password" id="password2" placeholder="确认密码">
+        
+        <select id="japanese_level">
+            <option value="zero">当前日语水平：零基础</option>
+            <option value="N5">当前日语水平：N5</option>
+            <option value="N4">当前日语水平：N4</option>
+            <option value="N3">当前日语水平：N3及以上</option>
+        </select>
+
+        <select id="learning_goal">
+            <option value="daily">学习目标：日常会话/旅游</option>
+            <option value="jlpt">学习目标：JLPT 考级</option>
+            <option value="business">学习目标：商务/工作</option>
+            <option value="anime">学习目标：动漫/兴趣</option>
+        </select>
+
+        <button id="regBtn" onclick="doRegister()">注 册</button>
+        <p id="msg" class="msg"></p>
+        <div class="link">已有账号？<a href="login.html">去登录</a></div>
+    </div>
+
+    <script src="js/auth.js"></script>
+    <script>
+        async function doRegister() {
+            const msg = document.getElementById('msg');
+            const btn = document.getElementById('regBtn');
+            
+            // 收集表单数据
+            const formData = {
+                username: document.getElementById('username').value.trim(),
+                nickname: document.getElementById('nickname').value.trim(),
+                password: document.getElementById('password').value,
+                password2: document.getElementById('password2').value,
+                japanese_level: document.getElementById('japanese_level').value,
+                learning_goal: document.getElementById('learning_goal').value
+            };
+
+            if (!formData.username || !formData.password || !formData.password2) {
+                msg.className = 'msg error';
+                msg.textContent = '用户名和密码为必填项';
+                return;
+            }
+
+            btn.disabled = true;
+            btn.textContent = '注册中...';
+
+            const result = await handleRegister(formData);
+
+            if (result.success) {
+                msg.className = 'msg success';
+                msg.textContent = result.message + ' 正在跳转登录页...';
+                setTimeout(() => { window.location.href = 'login.html'; }, 1500);
+            } else {
+                msg.className = 'msg error';
+                msg.textContent = result.message;
+                btn.disabled = false;
+                btn.textContent = '注 册';
+            }
+        }
+    </script>
+</body>
+</html>
