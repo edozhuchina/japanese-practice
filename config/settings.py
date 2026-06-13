@@ -146,6 +146,8 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",  # React/Next.js 默认端口
     "http://localhost:5173",  # Vite 默认端口
     "http://127.0.0.1:8000",  # 如果前端和后端跑在同一个端口（不推荐但兼容）
+    "http://localhost:8001",  # 后端 Django 服务端口
+    "http://127.0.0.1:8001",
 ]
 
 # 允许前端携带 Cookie（虽然 JWT 主要用 Header，但备用开启）
@@ -163,6 +165,8 @@ CSRF_TRUSTED_ORIGINS = [
     'http://localhost:8000',
     'http://localhost:5500',
     'http://127.0.0.1:5500',
+    'http://localhost:8001',
+    'http://127.0.0.1:8001',
 ]
 
 

@@ -1,0 +1,6 @@
+# Core project dependencies
+Django>=4.2
+djangorestframework
+djangorestframework-simplejwt
+django-cors-headers # Crucial for resolving cross-origin issues (Frontend <-> Backend)
+Pillow

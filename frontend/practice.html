@@ -157,11 +157,9 @@
         </div>
     </div>
 
-    <script>var API_BASE_URL = "http://127.0.0.1:8000/api/users"; var SCENES_API_URL = "http://127.0.0.1:8000/api/scenes"; var PROGRESS_API_URL = "http://127.0.0.1:8000/api/scenes";</script>
+    <script>window.API_BASE_URL = "http://localhost:8001/api/users"; window.SCENES_API_URL = "http://localhost:8001/api/scenes"; window.PROGRESS_API_URL = "http://localhost:8001/api/scenes";</script>
     <script src="js/auth.js"></script>
     <script>
-        const PROGRESS_API_URL = window.PROGRESS_API_URL || 'http://127.0.0.1:8000/api/scenes';
-        
         let currentSceneId = null;
         let dialogues = [];
         let currentIndex = 0;

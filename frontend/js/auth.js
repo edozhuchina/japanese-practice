@@ -1,10 +1,10 @@
 // 🌟 配置后端 API 的基础地址 (修改此处以匹配你的 Django 服务器端口)
 const API_BASE_URL = (typeof window !== 'undefined' && window.API_BASE_URL) 
-    ? window.API_BASE_URL : 'http://localhost:8000/api/users';
+    ? window.API_BASE_URL : 'http://localhost:8001/api/users';
 const SCENES_API_URL = (typeof window !== 'undefined' && window.SCENES_API_URL)
-    ? window.SCENES_API_URL : 'http://localhost:8000/api/scenes';
+    ? window.SCENES_API_URL : 'http://localhost:8001/api/scenes';
 const PROGRESS_API_URL = (typeof window !== 'undefined' && window.PROGRESS_API_URL)
-    ? window.PROGRESS_API_URL : 'http://localhost:8000/api/scenes';
+    ? window.PROGRESS_API_URL : 'http://localhost:8001/api/scenes';
 
 /**
  * Token 自动刷新机制
