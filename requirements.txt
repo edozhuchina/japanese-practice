@@ -4,3 +4,4 @@ djangorestframework
 djangorestframework-simplejwt
 django-cors-headers # Crucial for resolving cross-origin issues (Frontend <-> Backend)
 Pillow
+edge-tts  # 微软 Edge TTS 日语语音合成

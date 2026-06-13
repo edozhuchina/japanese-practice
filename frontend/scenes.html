@@ -47,11 +47,15 @@
         .scene-card:hover { transform: translateY(-3px); box-shadow: 0 8px 25px rgba(0,0,0,0.12); }
         .card-cover {
             height: 160px; background-size: cover; background-position: center;
-            position: relative;
+            position: relative; display: flex; align-items: center; justify-content: center;
+        }
+        .card-cover .cover-emoji {
+            font-size: 64px; position: relative; z-index: 1;
+            filter: drop-shadow(0 4px 8px rgba(0,0,0,0.2));
         }
         .card-cover::after {
             content: ''; position: absolute; bottom: 0; left: 0; right: 0;
-            height: 60px; background: linear-gradient(transparent, rgba(0,0,0,0.3));
+            height: 60px; background: linear-gradient(transparent, rgba(0,0,0,0.15));
         }
         .card-body { padding: 15px; }
         .card-tags { display: flex; gap: 8px; margin-bottom: 10px; }
@@ -96,7 +100,7 @@
         <button class="filter-btn" data-filter="daily" onclick="filterScenes('daily', this)">🏠 日常</button>
         <button class="filter-btn" data-filter="business" onclick="filterScenes('business', this)">💼 商务</button>
     </div>
-    <div class="filter-bar" style="border-bottom: none;">
+    <div class="filter-bar" id="levelBar" style="border-bottom: none;">
         <button class="filter-btn level-btn active" data-level="all" onclick="filterLevel('all', this)">全部等级</button>
         <button class="filter-btn level-btn" data-level="N5" onclick="filterLevel('N5', this)">N5</button>
         <button class="filter-btn level-btn" data-level="N4" onclick="filterLevel('N4', this)">N4</button>
@@ -152,11 +156,23 @@
                 return;
             }
 
-            const defaultCover = 'https://images.unsplash.com/photo-1528164344705-47542687000d?w=500';
-            
-            grid.innerHTML = scenes.map(scene => `
+            // 每个场景分类对应 emoji 和渐变色
+            const categoryStyle = {
+                shopping:  { emoji: '🛍️', gradient: 'linear-gradient(135deg, #a29bfe, #6c5ce7)' },
+                food:      { emoji: '🍱', gradient: 'linear-gradient(135deg, #fd79a8, #e17055)' },
+                travel:    { emoji: '🚃', gradient: 'linear-gradient(135deg, #74b9ff, #0984e3)' },
+                daily:     { emoji: '🏠', gradient: 'linear-gradient(135deg, #55efc4, #00b894)' },
+                business:  { emoji: '💼', gradient: 'linear-gradient(135deg, #ffeaa7, #fdcb6e)' },
+            };
+            const defaultStyle = { emoji: '📖', gradient: 'linear-gradient(135deg, #dfe6e9, #b2bec3)' };
+
+            grid.innerHTML = scenes.map(scene => {
+                const style = categoryStyle[scene.category] || defaultStyle;
+                return `
                 <div class="scene-card" onclick="goToPractice(${scene.id})">
-                    <div class="card-cover" style="background-image: url('${escapeHtml(scene.cover_image || defaultCover)}')"></div>
+                    <div class="card-cover" style="background: ${style.gradient}">
+                        <span class="cover-emoji">${style.emoji}</span>
+                    </div>
                     <div class="card-body">
                         <div class="card-tags">
                             <span class="tag category">${escapeHtml(scene.category_display)}</span>
@@ -169,8 +185,8 @@
                             <span class="start-btn">开始练习 →</span>
                         </div>
                     </div>
-                </div>
-            `).join('');
+                </div>`;
+            }).join('');
         }
 
         function goToPractice(sceneId) {
@@ -178,16 +194,32 @@
         }
 
         function filterScenes(category, btn) {
-            currentCategory = category;
-            document.querySelectorAll('.filter-bar:first-of-type .filter-btn').forEach(b => b.classList.remove('active'));
-            if (btn) btn.classList.add('active');
+            const allBtn = document.querySelector('#filterBar .filter-btn[data-filter="all"]');
+            if (currentCategory === category && category !== 'all') {
+                // 再次点击已选中的按钮 → 恢复为"全部"
+                currentCategory = 'all';
+                document.querySelectorAll('#filterBar .filter-btn').forEach(b => b.classList.remove('active'));
+                allBtn.classList.add('active');
+            } else {
+                currentCategory = category;
+                document.querySelectorAll('#filterBar .filter-btn').forEach(b => b.classList.remove('active'));
+                if (btn) btn.classList.add('active');
+            }
             applyFilters();
         }
 
         function filterLevel(level, btn) {
-            currentLevel = level;
-            document.querySelectorAll('.filter-bar:last-of-type .filter-btn').forEach(b => b.classList.remove('active'));
-            if (btn) btn.classList.add('active');
+            const allBtn = document.querySelector('#levelBar .filter-btn[data-level="all"]');
+            if (currentLevel === level && level !== 'all') {
+                // 再次点击已选中的按钮 → 恢复为"全部等级"
+                currentLevel = 'all';
+                document.querySelectorAll('#levelBar .filter-btn').forEach(b => b.classList.remove('active'));
+                allBtn.classList.add('active');
+            } else {
+                currentLevel = level;
+                document.querySelectorAll('#levelBar .filter-btn').forEach(b => b.classList.remove('active'));
+                if (btn) btn.classList.add('active');
+            }
             applyFilters();
         }
 

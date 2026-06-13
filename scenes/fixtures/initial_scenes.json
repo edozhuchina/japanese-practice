@@ -962,5 +962,393 @@
       ],
       "order": 2
     }
+  },
+  {
+    "model": "scenes.dialogue",
+    "pk": 35,
+    "fields": {
+      "scene": 5,
+      "role": "B",
+      "japanese_text": "はい、次は上野です。お気をつけて",
+      "kana_text": "はい、つぎはうえのです。おきをつけて",
+      "romaji_text": "Hai, tsugi wa Ueno desu. O ki o tsukete",
+      "chinese_text": "好的，下一站是上野。请小心。",
+      "audio_url": "",
+      "vocabulary": [
+        {"word": "次", "meaning": "下一站/下一个", "kana": "つぎ"},
+        {"word": "気をつけて", "meaning": "小心/注意", "kana": "きをつけて"}
+      ],
+      "order": 4
+    }
+  },
+  {
+    "model": "scenes.dialogue",
+    "pk": 36,
+    "fields": {
+      "scene": 6,
+      "role": "A",
+      "japanese_text": "よろしくお願いします。今度一緒に仕事ができるのを楽しみにしています",
+      "kana_text": "よろしくおねがいします。こんどいっしょにしごとができるのをたのしみにしています",
+      "romaji_text": "Yoroshiku onegaishimasu. Kondo issho ni shigoto ga dekiru no o tanoshimi ni shiteimasu",
+      "chinese_text": "请多关照。期待能一起工作。",
+      "audio_url": "",
+      "vocabulary": [
+        {"word": "今度", "meaning": "这次/下次", "kana": "こんど"},
+        {"word": "一緒に", "meaning": "一起", "kana": "いっしょに"},
+        {"word": "楽しみにしています", "meaning": "期待着"}
+      ],
+      "order": 3
+    }
+  },
+  {
+    "model": "scenes.dialogue",
+    "pk": 37,
+    "fields": {
+      "scene": 6,
+      "role": "B",
+      "japanese_text": "はい、こちらこそ。何かあればいつでも聞いてください",
+      "kana_text": "はい、こちらこそ。なにかあればいつでもきいてください",
+      "romaji_text": "Hai, kochira koso. Nanika areba itsudemo kiite kudasai",
+      "chinese_text": "彼此彼此。有什么事随时问我。",
+      "audio_url": "",
+      "vocabulary": [
+        {"word": "こちらこそ", "meaning": "彼此彼此/我才要"},
+        {"word": "いつでも", "meaning": "随时/任何时候"}
+      ],
+      "order": 4
+    }
+  },
+  {
+    "model": "scenes.dialogue",
+    "pk": 38,
+    "fields": {
+      "scene": 7,
+      "role": "B",
+      "japanese_text": "では、風邪ですね。薬を出しますので、ゆっくり休んでください",
+      "kana_text": "では、かぜですね。くすりをだしますので、ゆっくりやすんでください",
+      "romaji_text": "Dewa, kaze desu ne. Kusuri o dashimasu node, yukkuri yasunde kudasai",
+      "chinese_text": "那么是感冒。我给您开药，请好好休息。",
+      "audio_url": "",
+      "vocabulary": [
+        {"word": "風邪", "meaning": "感冒", "kana": "かぜ"},
+        {"word": "薬", "meaning": "药", "kana": "くすり"},
+        {"word": "ゆっくり", "meaning": "慢慢地/好好地"},
+        {"word": "休んで", "meaning": "休息", "kana": "やすんで"}
+      ],
+      "order": 4
+    }
+  },
+  {
+    "model": "scenes.dialogue",
+    "pk": 39,
+    "fields": {
+      "scene": 8,
+      "role": "A",
+      "japanese_text": "すみません、牛乳はどこですか",
+      "kana_text": "すみません、ぎゅうにゅうはどこですか",
+      "romaji_text": "Sumimasen, gyuunyuu wa doko desu ka",
+      "chinese_text": "请问，牛奶在哪里？",
+      "audio_url": "",
+      "vocabulary": [
+        {"word": "牛乳", "meaning": "牛奶", "kana": "ぎゅうにゅう"},
+        {"word": "どこ", "meaning": "哪里"}
+      ],
+      "order": 3
+    }
+  },
+  {
+    "model": "scenes.dialogue",
+    "pk": 40,
+    "fields": {
+      "scene": 8,
+      "role": "B",
+      "japanese_text": "乳製品コーナーの二番目の棚にあります",
+      "kana_text": "にゅうせいひんこーなーのにばんめのたなにいます",
+      "romaji_text": "Nyuu seihin koonaa no nibanme no tana ni arimasu",
+      "chinese_text": "在乳制品区的第二个货架上。",
+      "audio_url": "",
+      "vocabulary": [
+        {"word": "乳製品", "meaning": "乳制品", "kana": "にゅうせいひん"},
+        {"word": "棚", "meaning": "货架/架子", "kana": "たな"},
+        {"word": "二番目", "meaning": "第二个", "kana": "にばんめ"}
+      ],
+      "order": 4
+    }
+  },
+  {
+    "model": "scenes.dialogue",
+    "pk": 41,
+    "fields": {
+      "scene": 9,
+      "role": "A",
+      "japanese_text": "はい、分かりました。早く寝ます",
+      "kana_text": "はい、わかりました。はやくねます",
+      "romaji_text": "Hai, wakarimashita. Hayaku nemasu",
+      "chinese_text": "好的，我知道了。我会早点睡的。",
+      "audio_url": "",
+      "vocabulary": [
+        {"word": "分かりました", "meaning": "知道了/明白了", "kana": "わかりました"},
+        {"word": "早く", "meaning": "早点/快一点", "kana": "はやく"},
+        {"word": "寝ます", "meaning": "睡觉", "kana": "ねます"}
+      ],
+      "order": 3
+    }
+  },
+  {
+    "model": "scenes.dialogue",
+    "pk": 42,
+    "fields": {
+      "scene": 9,
+      "role": "B",
+      "japanese_text": "じゃあね、お大事に。また電話して",
+      "kana_text": "じゃあね、おだいじに。またでんわして",
+      "romaji_text": "Jaa ne, odaiji ni. Mata denwa shite",
+      "chinese_text": "那拜拜，保重。再打电话给我。",
+      "audio_url": "",
+      "vocabulary": [
+        {"word": "お大事に", "meaning": "保重/请多保重", "kana": "おだいじに"},
+        {"word": "また", "meaning": "再/再次"}
+      ],
+      "order": 4
+    }
+  },
+  {
+    "model": "scenes.dialogue",
+    "pk": 43,
+    "fields": {
+      "scene": 10,
+      "role": "A",
+      "japanese_text": "はい、どうぞよろしくお願いいたします。資料はお配りしました",
+      "kana_text": "はい、どうぞよろしくおねがいいたします。しりょうはおくばりしました",
+      "romaji_text": "Hai, douzo yoroshiku onegai itashimasu. Shiryou wa okubari shimashita",
+      "chinese_text": "好的，请多关照。资料已经分发给大家了。",
+      "audio_url": "",
+      "vocabulary": [
+        {"word": "資料", "meaning": "资料/文件", "kana": "しりょう"},
+        {"word": "お配り", "meaning": "分发", "kana": "おくばり"}
+      ],
+      "order": 3
+    }
+  },
+  {
+    "model": "scenes.dialogue",
+    "pk": 44,
+    "fields": {
+      "scene": 10,
+      "role": "B",
+      "japanese_text": "ありがとうございます。では、始めましょう",
+      "kana_text": "ありがとうございます。では、はじめましょう",
+      "romaji_text": "Arigatou gozaimasu. Dewa, hajimemashou",
+      "chinese_text": "谢谢。那么，我们开始吧。",
+      "audio_url": "",
+      "vocabulary": [
+        {"word": "では", "meaning": "那么"},
+        {"word": "始めましょう", "meaning": "开始吧", "kana": "はじめましょう"}
+      ],
+      "order": 4
+    }
+  },
+  {
+    "model": "scenes.dialogue",
+    "pk": 45,
+    "fields": {
+      "scene": 11,
+      "role": "A",
+      "japanese_text": "七時の回でお願いします。席は真ん中がいいです",
+      "kana_text": "しちじのかいでおねがいします。せきはまんなかがいいです",
+      "romaji_text": "Shichiji no kai de onegaishimasu. Seki wa mannaka ga ii desu",
+      "chinese_text": "请给我七点那场。座位想要中间的。",
+      "audio_url": "",
+      "vocabulary": [
+        {"word": "七時", "meaning": "七点", "kana": "しちじ"},
+        {"word": "真ん中", "meaning": "中间/正中央", "kana": "まんなか"}
+      ],
+      "order": 3
+    }
+  },
+  {
+    "model": "scenes.dialogue",
+    "pk": 46,
+    "fields": {
+      "scene": 11,
+      "role": "B",
+      "japanese_text": "はい、E列の八番と九番です。お楽しみください",
+      "kana_text": "はい、Eれつのはちばんときゅうばんです。おたのしみください",
+      "romaji_text": "Hai, E retsu no hachiban to kyuuban desu. Otanoshimi kudasai",
+      "chinese_text": "好的，E排8号和9号。祝您观影愉快。",
+      "audio_url": "",
+      "vocabulary": [
+        {"word": "列", "meaning": "排", "kana": "れつ"},
+        {"word": "番号", "meaning": "号码", "kana": "ばんごう"},
+        {"word": "お楽しみ", "meaning": "享受/愉快", "kana": "おたのしみ"}
+      ],
+      "order": 4
+    }
+  },
+  {
+    "model": "scenes.dialogue",
+    "pk": 47,
+    "fields": {
+      "scene": 12,
+      "role": "A",
+      "japanese_text": "そうですか。お疲れ様でした。乾杯しましょう",
+      "kana_text": "そうですか。おつかれさまでした。かんぱいしましょう",
+      "romaji_text": "Sou desu ka. Otsukaresama deshita. Kanpai shimashou",
+      "chinese_text": "是吗。辛苦了。来干杯吧。",
+      "audio_url": "",
+      "vocabulary": [
+        {"word": "お疲れ様", "meaning": "辛苦了", "kana": "おつかれさま"},
+        {"word": "乾杯", "meaning": "干杯", "kana": "かんぱい"}
+      ],
+      "order": 3
+    }
+  },
+  {
+    "model": "scenes.dialogue",
+    "pk": 48,
+    "fields": {
+      "scene": 12,
+      "role": "B",
+      "japanese_text": "乾杯！明日も頑張りましょう",
+      "kana_text": "かんぱい！あしたもがんばりましょう",
+      "romaji_text": "Kanpai! Ashita mo ganbarimashou",
+      "chinese_text": "干杯！明天也一起加油吧。",
+      "audio_url": "",
+      "vocabulary": [
+        {"word": "明日", "meaning": "明天", "kana": "あした"},
+        {"word": "頑張りましょう", "meaning": "加油吧/努力吧", "kana": "がんばりましょう"}
+      ],
+      "order": 4
+    }
+  },
+  {
+    "model": "scenes.scene",
+    "pk": 13,
+    "fields": {
+      "title": "在咖啡厅点饮料",
+      "description": "在咖啡厅点咖啡和甜点的简单对话",
+      "category": "food",
+      "level": "N5",
+      "cover_image": "",
+      "is_active": true,
+      "created_at": "2026-06-13T10:00:00"
+    }
+  },
+  {
+    "model": "scenes.scene",
+    "pk": 14,
+    "fields": {
+      "title": "初次见面打招呼",
+      "description": "在公司里初次见面时的简单寒暄",
+      "category": "business",
+      "level": "N5",
+      "cover_image": "",
+      "is_active": true,
+      "created_at": "2026-06-13T10:00:00"
+    }
+  },
+  {
+    "model": "scenes.dialogue",
+    "pk": 49,
+    "fields": {
+      "scene": 13, "role": "A", "order": 1,
+      "japanese_text": "コーヒーを一つください",
+      "kana_text": "コーヒーをひとつください",
+      "romaji_text": "Koohii o hitotsu kudasai",
+      "chinese_text": "请给我一杯咖啡。",
+      "audio_url": "",
+      "vocabulary": [{"word": "コーヒー", "meaning": "咖啡"}, {"word": "一つ", "meaning": "一个/一杯", "kana": "ひとつ"}]
+    }
+  },
+  {
+    "model": "scenes.dialogue",
+    "pk": 50,
+    "fields": {
+      "scene": 13, "role": "B", "order": 2,
+      "japanese_text": "はい、ホットですか、アイスですか",
+      "kana_text": "はい、ホットですか、アイスですか",
+      "romaji_text": "Hai, hotto desu ka, aisu desu ka",
+      "chinese_text": "好的，要热的还是冰的？",
+      "audio_url": "",
+      "vocabulary": [{"word": "ホット", "meaning": "热的"}, {"word": "アイス", "meaning": "冰的"}]
+    }
+  },
+  {
+    "model": "scenes.dialogue",
+    "pk": 51,
+    "fields": {
+      "scene": 13, "role": "A", "order": 3,
+      "japanese_text": "ホットでお願いします。ケーキもありますか",
+      "kana_text": "ホットでおねがいします。ケーキもありますか",
+      "romaji_text": "Hotto de onegaishimasu. Keeki mo arimasu ka",
+      "chinese_text": "请给我热的。还有蛋糕吗？",
+      "audio_url": "",
+      "vocabulary": [{"word": "お願いします", "meaning": "请给我/拜托了", "kana": "おねがいします"}, {"word": "ケーキ", "meaning": "蛋糕"}]
+    }
+  },
+  {
+    "model": "scenes.dialogue",
+    "pk": 52,
+    "fields": {
+      "scene": 13, "role": "B", "order": 4,
+      "japanese_text": "はい、ございます。三百円です",
+      "kana_text": "はい、ございます。さんびゃくえんです",
+      "romaji_text": "Hai, gozaimasu. Sanbyaku-en desu",
+      "chinese_text": "有的。一共三百日元。",
+      "audio_url": "",
+      "vocabulary": [{"word": "ございます", "meaning": "有（礼貌）"}, {"word": "三百円", "meaning": "三百日元", "kana": "さんびゃくえん"}]
+    }
+  },
+  {
+    "model": "scenes.dialogue",
+    "pk": 53,
+    "fields": {
+      "scene": 14, "role": "A", "order": 1,
+      "japanese_text": "初めまして。私は王です",
+      "kana_text": "はじめまして。わたしはおうです",
+      "romaji_text": "Hajimemashite. Watashi wa Ou desu",
+      "chinese_text": "初次见面。我是小王。",
+      "audio_url": "",
+      "vocabulary": [{"word": "初めまして", "meaning": "初次见面", "kana": "はじめまして"}, {"word": "私", "meaning": "我", "kana": "わたし"}]
+    }
+  },
+  {
+    "model": "scenes.dialogue",
+    "pk": 54,
+    "fields": {
+      "scene": 14, "role": "B", "order": 2,
+      "japanese_text": "初めまして。田中です。どうぞよろしくお願いします",
+      "kana_text": "はじめまして。たなかです。どうぞよろしくおねがいします",
+      "romaji_text": "Hajimemashite. Tanaka desu. Douzo yoroshiku onegaishimasu",
+      "chinese_text": "初次见面。我是田中。请多关照。",
+      "audio_url": "",
+      "vocabulary": [{"word": "どうぞ", "meaning": "请"}, {"word": "よろしくお願いします", "meaning": "请多关照", "kana": "よろしくおねがいします"}]
+    }
+  },
+  {
+    "model": "scenes.dialogue",
+    "pk": 55,
+    "fields": {
+      "scene": 14, "role": "A", "order": 3,
+      "japanese_text": "こちらこそ、よろしくお願いします",
+      "kana_text": "こちらこそ、よろしくおねがいします",
+      "romaji_text": "Kochira koso, yoroshiku onegaishimasu",
+      "chinese_text": "彼此彼此，请多关照。",
+      "audio_url": "",
+      "vocabulary": [{"word": "こちらこそ", "meaning": "彼此彼此/我才要"}]
+    }
+  },
+  {
+    "model": "scenes.dialogue",
+    "pk": 56,
+    "fields": {
+      "scene": 14, "role": "B", "order": 4,
+      "japanese_text": "では、一緒に頑張りましょう",
+      "kana_text": "では、いっしょにがんばりましょう",
+      "romaji_text": "Dewa, issho ni ganbarimashou",
+      "chinese_text": "那么，一起加油吧。",
+      "audio_url": "",
+      "vocabulary": [{"word": "一緒に", "meaning": "一起", "kana": "いっしょに"}, {"word": "頑張りましょう", "meaning": "加油吧", "kana": "がんばりましょう"}]
+    }
   }
 ]
